@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>My LIFF App</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1656870942-pBymm9wN" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่ๆๆๆ",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "horizontal",
+    "position": "default",
+    "backgroundColor": "#FFFFFFFF",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ทำยoด 650 ถoนได้ 250",
+        "weight": "bold",
+        "size": "md",
+        "color": "#888888FF",
+        "align": "start",
+        "gravity": "top",
+        "contents": []
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://media.discordapp.net/attachments/989835449432408084/989851763521753089/02-01_2.jpg",
+    "size": "full",
+    "aspectRatio": "20:20",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "label": "Action",
+      "uri": "https://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 1,
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/989835449432408084/989851795616583740/03-01_2.jpg",
+            "gravity": "bottom",
+            "size": "sm",
+            "aspectRatio": "4:3",
+            "aspectMode": "cover"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "flex": 2,
+        "contents": [
+          {
+            "type": "text",
+            "text": "โปรสมาชิกใหม่ (ไม่ติดเทิร์น)",
+            "weight": "bold",
+            "size": "xs",
+            "flex": 1,
+            "gravity": "top",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "ฝדก 300 รัυ 390",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "text",
+            "text": "ฝדก 50 รัυ 90 (รัυได้ทุกวัน)",
+            "size": "xs",
+            "flex": 2,
+            "gravity": "center",
+            "contents": []
+          },
+          {
+            "type": "separator"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "รับเคsดิตwรี",
+          "uri": "https://bit.ly/3br0Gg8"
+        },
+        "style": "primary"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ให้เพื่อน",
+          "uri": "https://liff.line.me/1657249571-Kbrv1XMJ"
+        }
+      }
+    ]
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
